@@ -1,0 +1,14 @@
+.App {
+  text-align: center;
+
+}
+#cart{
+  text-align: center;
+}
+#movies{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+
