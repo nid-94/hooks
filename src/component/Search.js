@@ -5,23 +5,9 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons'
 
 
 
-function Search({MovieData}) {
+function Search() {
     const [searchField, setSearchField] = useState("");
-    const filteredMovies = MovieData.filter(
-    movie => {
-    return (
-        movie
-        .title
-        .toLowerCase()
-        .includes(searchField.toLowerCase()) ||
-        movie
-        .rating
-        .toLowerCase()
-        .includes(searchField.toLowerCase())
-    );
-    }
-);
-
+    
 const handleChange = e => {
     setSearchField(e.target.value);
 
@@ -34,7 +20,7 @@ const handleChange = e => {
             <FontAwesomeIcon icon={faSearch} />
                 <input  type = "search" placeholder = "Search Movie" onChange = {handleChange}/>
             </div>
-            <MovieCard filteredMovies={filteredMovies}/>
+            <MovieCard searchField={searchField}/>
         </div>
 
     )
