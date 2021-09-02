@@ -10,5 +10,17 @@
   justify-content: space-around;
   flex-wrap: wrap;
 }
-
+input{
+  width: 400px;
+  margin: 5px;
+  
+}
+#search{
+  
+  width: max-content;
+  padding-left: 10px;
+}
+form{
+  text-align: center;
+}
 

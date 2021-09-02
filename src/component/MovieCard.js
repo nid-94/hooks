@@ -5,7 +5,7 @@ import { Add } from './Add';
 
 const MovieCard = ({filteredMovies}) => {
     const [movie, setMovie] = useState(MovieData);
-    const addNew=(newMovie)=>setMovie([...movie,newMovie])
+    const addNew=(newMovie)=>setMovie([...filteredMovies,newMovie])
     
     
     return (

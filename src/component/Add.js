@@ -41,14 +41,12 @@ export const Add = ({addNew}) => {
         <Button variant="secondary" onClick={handleClose}>
             Close
         </Button>
-        <Button variant="primary" onClick={()=>addNew({
+        <Button variant="primary" onClick={()=>{handleClose();addNew({
             title:titleRef.current.value,
             description:descriptionRef.current.value,
             rating:rateRef.current.value,
             posterURL:urlRef.current.value,
-        
-        
-        })} >
+        })} }>
             Save Changes
         </Button>
         </Modal.Footer>

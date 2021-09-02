@@ -15,11 +15,6 @@ const MovieList = ({MovieData}) => {
             <ListGroupItem>{MovieData.rating}</ListGroupItem>
         </ListGroup>
         </Card>
-
-        
-
-
-
         </div>
     )
 }

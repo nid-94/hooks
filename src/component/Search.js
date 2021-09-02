@@ -1,12 +1,12 @@
 import React,{useState} from 'react'
 import MovieCard from './MovieCard';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSearch } from '@fortawesome/free-solid-svg-icons'
 
 
 
 function Search({MovieData}) {
     const [searchField, setSearchField] = useState("");
-    
-    
     const filteredMovies = MovieData.filter(
     movie => {
     return (
@@ -30,8 +30,10 @@ const handleChange = e => {
 
     return (
         <div>
-            <input  type = "search" placeholder = "Search Movie" onChange = {handleChange}/>
-            
+            <div id="search">
+            <FontAwesomeIcon icon={faSearch} />
+                <input  type = "search" placeholder = "Search Movie" onChange = {handleChange}/>
+            </div>
             <MovieCard filteredMovies={filteredMovies}/>
         </div>
 
