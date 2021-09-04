@@ -12,7 +12,7 @@ const MovieList = ({MovieData}) => {
         </Card.Body>
         <ListGroup className="list-group-flush">
             <ListGroupItem>{MovieData.description}</ListGroupItem>
-            <ListGroupItem>{MovieData.rating}</ListGroupItem>
+            <ListGroupItem>IMDB {MovieData.rating}</ListGroupItem>
         </ListGroup>
         </Card>
         </div>
