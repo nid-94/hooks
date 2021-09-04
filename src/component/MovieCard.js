@@ -9,7 +9,10 @@ const MovieCard = ({searchField}) => {
     
     
     return (
+        <>
+        <Add addNew={addNew} clasName="Add"/>
         <div id="movies">
+            
             {movie.filter(
     movie => {
     return (
@@ -24,9 +27,9 @@ const MovieCard = ({searchField}) => {
     );
     }
 ).map((film,i)=><MovieList MovieData={film} key={i}/>)} 
-            <Add addNew={addNew}/>
             
         </div>
+        </>
     )
 }
 

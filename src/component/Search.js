@@ -17,7 +17,7 @@ const handleChange = e => {
     return (
         <div>
             <div id="search">
-            <FontAwesomeIcon icon={faSearch} />
+                <FontAwesomeIcon icon={faSearch} />
                 <input  type = "search" placeholder = "Search Movie" onChange = {handleChange}/>
             </div>
             <MovieCard searchField={searchField}/>
