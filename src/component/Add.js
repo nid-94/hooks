@@ -16,8 +16,8 @@ export const Add = ({addNew}) => {
     
    
     return (
-        <div>
-            <Button variant="primary" onClick={handleShow}>
+        <div className="Add" >
+            <Button variant="dark" onClick={handleShow}  >
         Add-Movie
       </Button>
 

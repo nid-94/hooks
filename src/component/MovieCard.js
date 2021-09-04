@@ -10,7 +10,8 @@ const MovieCard = ({searchField}) => {
     
     return (
         <>
-        <Add addNew={addNew} clasName="Add"/>
+        <div><Add addNew={addNew} /></div>
+        
         <div id="movies">
             
             {movie.filter(

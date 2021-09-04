@@ -13,7 +13,7 @@
 }
 input{
   width: 400px;
-  margin: 5px;
+  margin: 10px;
   
 }
 #search{
@@ -25,6 +25,49 @@ form{
   text-align: center;
 }
 .Add{
-    
+  display: flex ;
+  justify-content: flex-end;
+  margin: 7px;
 }
+@media screen and (max-width: 960px) {
+  .App {
+    text-align: center;
+    width: 100%;
+    position: relative;
+  
+  }
+  #cart{
+    text-align: center;
+  }
+  #movies{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 5px;
+    margin: 5px;
+    width: 100%;
+    position: relative;
+  }
+  input{
+    width: 100%;
+    margin: 10px;
+    
+  }
+  #search{
+    
+    width: 100%;
+    padding-left: 10px;
+    position: relative;
 
+  }
+  form{
+    text-align: center;
+    
+  }
+  .Add{
+    display: flex ;
+    justify-content: flex-end;
+    margin: 7px;
+
+
+}
+}

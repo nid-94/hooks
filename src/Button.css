@@ -3,17 +3,18 @@
 
 }
 .btn{
-    padding:8px 20px;
+    /* padding:8px 20px; */
     border-radius: 4px;
     outline: none;
     border: none;
     cursor: pointer;
+    
 }
 .btn:hover{
-    padding: 8px 20px;
+    /* padding: 8px 20px; */
     transition: all 0.3s ease-out;
-    background: white;
-    color:#6568F4;
+    background: rgb(138, 15, 15);
+    color:#f6f6fa;
     transition: 250ms;
 
     
